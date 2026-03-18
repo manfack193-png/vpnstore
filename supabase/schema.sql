@@ -73,5 +73,5 @@ insert into products (name, description, price, original_price, category, badge,
 
 -- Admin user (password: admin123)
 insert into users (name, email, password, role) values
-  ('Admin', 'admin@vpnstorebd.com', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lh', 'admin')
+  ('Admin', 'admin@vpnstorebd.com', 'admin123', 'admin')
 on conflict (email) do nothing;
